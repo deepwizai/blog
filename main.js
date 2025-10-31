@@ -14,13 +14,16 @@ closeBtn.addEventListener("click", () => {
 const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 const swiper = new Swiper('.hero-swiper', {
     loop: true,
-    spaceBetween: 60,
+    spaceBetween: 40,
     slidesPerView: 1,
     centeredSlides: true,
-    speed: 1000, // smooth slide animation
+    centeredSlides: false,
+    speed: 900, // smooth slide animation
+    // grabCursor: true,
     autoplay: !isMobile?{
         delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     }:false,
     pagination: {
         el: '.swiper-pagination',
