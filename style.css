@@ -19,20 +19,13 @@
     -swiper-pagination-color: var(--light);
 }
 
-@font-face {
-        font-family: 'Forever Freedom'; /* Choose a name for your font */
-        src: url('/assets/fonts/ForeverFreedomRegularFontRegular/ForeverFreedomRegularFontRegular.ttf') format('truetype');
-        font-weight: normal; /* Optional: define font weight */
-        font-style: normal;  /* Optional: define font style */
-    }
-
 /* --------------------------------------
     Global styles
 -------------------------------------- */
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    min-height: 100vh;
+    height: auto;
     background: radial-gradient(circle at center, #3b3b3b 0%, #2a2a2a 30%, #1a1a1a 70%, #111111 100%);
     background-attachment: fixed;
     color: var(--light);
@@ -221,18 +214,21 @@ p {
 
 .hero-section > .cover-picture {
     width: 40%;
-    height: 500px;
+    height: 500px !important;
     border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    /* aspect-ratio: 16 / 9; */
     overflow: hidden;
-    background: white;
+    /* background: white; */
     box-shadow:
         0 10px 25px rgba(0, 0, 0, 0.4),
         0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 .hero-section > .cover-picture > img {
+    height: 100% !important;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -314,7 +310,7 @@ p {
         width: 100%;                     /* full width image */
         height: auto;                    /* auto height for natural scaling */
         max-height: 400px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); */
     }
 
     .hero-section > .cover-picture > img {
@@ -375,7 +371,7 @@ p {
     .swiper-button-next,
     .swiper-button-prev {
         top: 50% !important;
-        transform: translateY(-650%) !important;
+        transform: translateY(-750%) !important;
     }
 }
 
@@ -383,10 +379,10 @@ p {
     .swiper-button-next,
     .swiper-button-prev {
         top: 50% !important;
-        transform: translateY(-750%) !important;
+        transform: translateY(-900%) !important;
     }
 
     .hero-section {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 }
