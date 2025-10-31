@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DeepwizAI</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+
+    <body>
+        <header id="header">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="/index.html" class="nav-brand">
+                    <img class="logo" src="/assets/logo/deepwizai-07.svg" alt="DeepwizAI Logo">
+                </a>
+
+                <!-- Desktop navigation -->
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Blogs</a></li>
+                    <li><a href="#" class="nav-link">Shorts</a></li>
+                    <li><a href="#" class="nav-link">Research</a></li>
+                    <li><a href="#" class="nav-link">Projects</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                </ul>
+
+                <!-- Mobile hamburger icon -->
+                <button class="toggle-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+
+            <!-- Fullscreen overlay menu for mobile -->
+            <div class="nav-overlay">
+                <button class="close-button"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Blogs</a></li>
+                    <li><a href="#" class="nav-link">Shorts</a></li>
+                    <li><a href="#" class="nav-link">Research</a></li>
+                    <li><a href="#" class="nav-link">Projects</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Main content goes here -->
+        <!-- Swiper container -->
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="hero-section">
+                        <div class="cover-picture">
+                            <img src="/assets/images/efe-kurnaz-RnCPiXixooY-unsplash.jpg" alt="Bidirectional RNN Theory">
+                        </div>
+                        <div class="content">
+                            <h1>Why bidirectional RNN is better than unidirectional RNN: A theoretical proof</h1>
+                            <h3>Latest Blog</h3>
+                            <p>Ever wondered how Machine Learning research papers come up with their own mathematical proofs? In this article, we will provide you with a step-by-step, theoretical proof of why a bidirectional Recurrent Neural Network (RNN) performs empirically better than a unidirectional RNN. Our proof is novel and does not exist in Deep Learning literature. By going through this article, you will learn how to write your own proofs!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="hero-section">
+                        <div class="cover-picture">
+                            <img src="/assets/images/joel-filipe-QwoNAhbmLLo-unsplash.jpg" alt="Efficient Model Pruning">
+                        </div>
+                        <div class="content">
+                            <h1>Evaluating the Robustness of Biomedical Concept Normalization</h1>
+                            <h3>Latest Research</h3>
+                            <p>BERT is vulnerable to adversarial attacks and input transformations. This leads to the linkage of invalid inputs to concepts in an ontology. We study the robustness of different BERT-based Normalization models, including 13 different input transformations, and propose novel adversarial attacks. We found a significant drop in performance. Existing mitigation strategies are also explored.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="hero-section">
+                        <div class="cover-picture">
+                            <img src="/assets/images/simon-lee-zft-W1kVEhg-unsplash.jpg" alt="Efficient Model Pruning">
+                        </div>
+                        <div class="content">
+                            <h1>How to perform Unsupervised Feature Selection using Supervised Algorithms</h1>
+                            <h3>Latest Project</h3>
+                            <p>This article will provide you with a step-by-step process on how we came up with a new Machine Learning (ML) algorithm that performs unsupervised feature selection using any supervised algorithm of your choice such as XGBoost. Our goal is to provide you with insights into the process for developing a new ML algorithm.</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Add more slides as needed -->
+            </div>
+
+            <!-- Swiper navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Swiper pagination dots -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>
